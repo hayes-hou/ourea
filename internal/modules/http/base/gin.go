@@ -1,0 +1,27 @@
+// Package base Copyright (c) 2021 ~ 2022 Ourea Team
+// Implementation of DDD framework with golang
+package base
+
+import (
+	"time"
+
+	"golang.org/x/time/rate"
+
+	"ourea/config"
+	"ourea/internal/modules/http/middleware"
+
+	"github.com/gin-gonic/gin"
+	"github.com/sirupsen/logrus"
+	"go.uber.org/fx"
+)
+
+// RegisterGin 新建一个限速器，允许突发 10 个并发，限速 3rps，超过 500ms 就不再等待
+var RegisterGin = fx.Provide(func(cfg *config.Config, logger *logrus.Logger) *gin.Engine {
+	gin.SetMode(gin.TestMode)
+	g := gin.Default()
+	g.Use(middleware.Cors(),
+		middleware.Logger(logger),
+		middleware.Recovery(logger),
+		middleware.NewLimiter(rate.Limit(cfg.LimiterConf.Speed), cfg.LimiterConf.Concurrent, cfg.LimiterConf.Timeout*time.Microsecond))
+	return g
+})
