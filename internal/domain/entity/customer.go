@@ -1,5 +1,5 @@
-// Package entity Copyright (c) 2021 ~ 2022 Ourea Team
-// Implementation of DDD framework with golang
+// Package entity Copyright (c) 2021 ~ 2022 Ourea Go Framework
+// Ourea Desc Dependency Injection And Simplified version DDD
 package entity
 
 import (

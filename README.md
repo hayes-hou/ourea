@@ -1,9 +1,14 @@
-```   
-Implementation of DDD framework with golang
-DI – Dependency Injection
+# Ourea Go Framework
+Ourea Desc Dependency Injection And Simplified version DDD
 
-./go-stress-testing -c 100 -n 10 -u http://127.0.0.1:8000/api_customer
-brew services start mongodb/brew/mongodb-community
-/Users/houhuiyang/go/bin
-./go-stress-testing -c 20 -n 1 -u http://127.0.0.1:18000/api_customer
-``` 
+**Please use RELEASE version V0.0.1**
+
+## Community
+
+* [http://ourea.vip/](http://ourea.vip/)
+* QQ ID:547233050
+
+## License
+
+Ourea Source Code Is Licensed Under the Apache Licence, Version 2.0
+([https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)).
