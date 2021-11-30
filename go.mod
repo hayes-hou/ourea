@@ -4,7 +4,6 @@ go 1.16
 
 require (
 	github.com/DeanThompson/ginpprof v0.0.0-20201112072838-007b1e56b2e1
-	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
 	github.com/garyburd/redigo v1.6.3
 	github.com/gin-gonic/gin v1.7.3
 	github.com/jinzhu/gorm v1.9.16
