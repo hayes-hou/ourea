@@ -3,12 +3,12 @@
 package base
 
 import (
+	"ourea/internal/core/middleware"
 	"time"
 
 	"golang.org/x/time/rate"
 
 	"ourea/config"
-	"ourea/internal/core/http/middleware"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"

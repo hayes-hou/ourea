@@ -16,6 +16,6 @@ var Module = fx.Options(
 
 	// Customer
 	service.RegCustomerService, // Service
-	regCustomerController,      // Controller
+	regCustomerApplication,     // Application
 
 )

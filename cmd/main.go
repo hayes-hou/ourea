@@ -4,7 +4,7 @@ package main
 
 import (
 	"ourea/infrastructure/mongo"
-	"ourea/internal/core/http"
+	"ourea/internal/core"
 	"ourea/internal/core/logger"
 	"ourea/internal/core/system"
 
@@ -22,7 +22,7 @@ var Module = fx.Options(
 	mongo.Module,  // mongodb
 	cache.Module,  // Redis
 	config.Module, // config
-	http.Module,   // http
+	core.Module,   // http
 )
 
 // Main Run

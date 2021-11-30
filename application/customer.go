@@ -3,7 +3,7 @@
 package application
 
 import (
-	"ourea/internal/core/http/base"
+	"ourea/internal/core/base"
 	"ourea/internal/domain/service"
 
 	"github.com/gin-gonic/gin"
@@ -11,7 +11,7 @@ import (
 	"go.uber.org/fx"
 )
 
-var regCustomerController = fx.Provide(NewCustomerController)
+var regCustomerApplication = fx.Provide(NewCustomerController)
 
 type Param struct {
 	UserName string `json:"user" form:"user"`

@@ -25,6 +25,6 @@ redis:
   idleTimeout: 180
   db: 8
 limiter:
-  speed: 500
-  concurrent: 300
+  speed: 5000
+  concurrent: 3000
   timeout: 500

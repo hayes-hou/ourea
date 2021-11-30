@@ -3,12 +3,13 @@
 package handler
 
 import (
-	"ourea/internal/core/http/router"
+	"ourea/internal/core/router"
 
 	"go.uber.org/fx"
 )
 
 var Module = fx.Options(
-	cfgCustomerRouter,
+
+	cfgCustomerHandler,
 	router.CfgGin,
 )

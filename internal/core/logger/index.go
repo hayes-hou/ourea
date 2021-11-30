@@ -8,7 +8,7 @@ import (
 	"os"
 	"path"
 
-	logrus "github.com/sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"go.uber.org/fx"
 )
 
