@@ -1,12 +1,12 @@
 # Ourea Go Framework
 Ourea Desc Dependency Injection And Simplified version DDD
 
-**Please use RELEASE version V0.0.1**
+**Please use RELEASE version V0.0.3**
 
 ## Community
 
 * [https://ourea.vip/](https://ourea.vip/)
-* QQ:547233050
+* QQ：547233050
 
 ## License
 
