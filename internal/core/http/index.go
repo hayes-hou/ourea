@@ -4,7 +4,7 @@ package http
 
 import (
 	"ourea/application"
-	"ourea/interface"
+	"ourea/handler"
 	"ourea/internal/core/http/base"
 
 	"go.uber.org/fx"
@@ -13,5 +13,5 @@ import (
 var Module = fx.Options(
 	base.RegisterGin,   // Init Gin
 	application.Module, // Controllers
-	_interface.Module,  // Routers
+	handler.Module,     // Routers
 )

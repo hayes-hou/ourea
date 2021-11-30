@@ -1,4 +1,4 @@
-// Package application circuitBreaker and err isCopyright (c) 2021 ~ 2022 Ourea Go Framework
+// Package application Copyright (c) 2021 ~ 2022 Ourea Go Framework
 // Ourea Desc Dependency Injection And Simplified version DDD
 package application
 

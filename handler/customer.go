@@ -1,6 +1,6 @@
-// Package _interface Copyright (c) 2021 ~ 2022 Ourea Go Framework
+// Package handler Package  Copyright (c) 2021 ~ 2022 Ourea Go Framework
 // Ourea Desc Dependency Injection And Simplified version DDD
-package _interface
+package handler
 
 import (
 	"ourea/application"
