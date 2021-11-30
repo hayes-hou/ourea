@@ -1,8 +1,9 @@
-// Package controllers circuitBreaker and err isCopyright (c) 2021 ~ 2022 Ourea Go Framework
+// Package application circuitBreaker and err isCopyright (c) 2021 ~ 2022 Ourea Go Framework
 // Ourea Desc Dependency Injection And Simplified version DDD
-package controllers
+package application
 
 import (
+	"ourea/internal/core/http/base"
 	"ourea/internal/domain/service"
 
 	"github.com/gin-gonic/gin"
@@ -32,7 +33,7 @@ func NewCustomerController(logger *logrus.Logger, service *service.CustomerServi
 func (c *CustomerController) Get(ctx *gin.Context) {
 
 	// Param
-	output := NewResponse(ctx)
+	output := base.NewResponse(ctx)
 	var param Param
 	err := ctx.ShouldBindQuery(&param)
 	c.logger.Println("param", param, err, ctx.Query("user"))

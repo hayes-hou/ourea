@@ -5,8 +5,8 @@ Ourea Desc Dependency Injection And Simplified version DDD
 
 ## Community
 
-* [https://ourea.vip/](http://ourea.vip/)
-* QQ ID:547233050
+* [https://ourea.vip/](https://ourea.vip/)
+* QQ:547233050
 
 ## License
 

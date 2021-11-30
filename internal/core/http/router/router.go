@@ -17,7 +17,7 @@ import (
 	"go.uber.org/fx"
 )
 
-var cfgGin = fx.Invoke(func(lifecycle fx.Lifecycle, g *gin.Engine, cfg *config.Config, log *logrus.Logger) {
+var CfgGin = fx.Invoke(func(lifecycle fx.Lifecycle, g *gin.Engine, cfg *config.Config, log *logrus.Logger) {
 
 	// Http Server
 	httpServer := &http.Server{

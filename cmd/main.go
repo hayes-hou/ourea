@@ -4,9 +4,9 @@ package main
 
 import (
 	"ourea/infrastructure/mongo"
-	"ourea/internal/modules/http"
-	"ourea/internal/modules/logger"
-	"ourea/internal/modules/system"
+	"ourea/internal/core/http"
+	"ourea/internal/core/logger"
+	"ourea/internal/core/system"
 
 	"ourea/config"
 	"ourea/infrastructure/cache"

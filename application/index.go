@@ -1,6 +1,6 @@
-// Package controllers Copyright (c) 2021 ~ 2022 Ourea Go Framework
+// Package application Copyright (c) 2021 ~ 2022 Ourea Go Framework
 // Ourea Desc Dependency Injection And Simplified version DDD
-package controllers
+package application
 
 import (
 	"ourea/internal/domain/repository"

@@ -43,12 +43,12 @@ func CircuitBreakerWrapper(ctx *gin.Context) {
 		ctx.Next()
 		code := ctx.Writer.Status()
 		if code != http.StatusOK {
-			fmt.Println("~~~~~~~~~~~~~~~~~~~~~~~~", CircuitBreakerName, code)
+			fmt.Println(CircuitBreakerName, code)
 		}
 		return nil
 	}, func(err error) error {
 		if err != nil {
-			fmt.Println("-------------------------", CircuitBreakerName, err.Error())
+			fmt.Println(CircuitBreakerName, err.Error())
 		}
 		return err
 	})
