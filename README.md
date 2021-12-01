@@ -1,8 +1,8 @@
 # Ourea Go Framework
 Ourea Desc Dependency Injection And Simplified version DDD
 
-**Please use RELEASE version V0.0.6**
-*![Ourea](https://ourea.vip/ourea.png)
+**Please use RELEASE version V0.0.6**<br />
+![Ourea](https://ourea.vip/ourea.png)
 
 
 ## Community
