@@ -9,6 +9,7 @@ Ourea Desc Dependency Injection And Simplified version DDD
 
 * [https://ourea.vip/](https://ourea.vip/)
 * QQ：547233050
+* Dev：houhuiyang
 
 ## License
 
