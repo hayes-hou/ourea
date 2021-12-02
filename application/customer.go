@@ -61,7 +61,7 @@ func (c *CustomerController) Get(ctx *gin.Context) {
 	// test
 	t1 := map[string]interface{}{
 		"name": "customer1",
-		"a":    "c",
+		"a":    "c1",
 	}
 
 	t2 := map[string]interface{}{

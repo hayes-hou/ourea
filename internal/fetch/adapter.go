@@ -19,6 +19,9 @@ func (d *DtoAdapter) DtoTransform() (map[string]interface{}, error) {
 	var output map[string]interface{}
 	output = make(map[string]interface{}, len(d.Dto.DtoA))
 	for k, v := range d.Dto.DtoA {
+		if _, ok := d.Dto.DtoB[v.(string)]; !ok {
+			continue
+		}
 		output[k] = d.Dto.DtoB[v.(string)]
 	}
 	return output, nil

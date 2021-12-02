@@ -1637,3 +1637,9 @@
 {"level":"info","msg":"aaa","time":"2021-12-02 13:48:36"}
 {"level":"info","msg":"sql/Users/houhuiyang/go/src/ourea/internal/domain/service/customer.go:503.922636msSELECT * FROM `upload_img`  WHERE `upload_img`.`deleted_at` IS NULL[] 2","requestId":"navigate","spanId":"navigate","time":"2021-12-02 13:48:36"}
 {"clientIp":"127.0.0.1","latencyTime":5899685,"level":"info","module":"gin","msg":"","reqMethod":"GET","reqUri":"/api_customer","requestId":"navigate","spanId":"navigate","statusCode":200,"time":"2021-12-02 13:48:36"}
+{"level":"info","msg":"gorm init","time":"2021-12-02 13:54:35"}
+{"level":"info","msg":"gorm init","time":"2021-12-02 13:54:47"}
+{"level":"info","msg":"param { } \u003cnil\u003e ","time":"2021-12-02 13:54:48"}
+{"level":"info","msg":"aaa","time":"2021-12-02 13:54:48"}
+{"level":"info","msg":"sql/Users/houhuiyang/go/src/ourea/internal/domain/service/customer.go:506.2812msSELECT * FROM `upload_img`  WHERE `upload_img`.`deleted_at` IS NULL[] 2","requestId":"navigate","spanId":"navigate","time":"2021-12-02 13:54:48"}
+{"clientIp":"127.0.0.1","latencyTime":8602031,"level":"info","module":"gin","msg":"","reqMethod":"GET","reqUri":"/api_customer","requestId":"navigate","spanId":"navigate","statusCode":200,"time":"2021-12-02 13:54:48"}
