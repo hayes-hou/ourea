@@ -5,6 +5,7 @@ package application
 import (
 	"ourea/internal/core/base"
 	"ourea/internal/domain/service"
+	"ourea/internal/fetch"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
@@ -57,11 +58,28 @@ func (c *CustomerController) Get(ctx *gin.Context) {
 	// 	return
 	// }
 
+	// test
+	t1 := map[string]interface{}{
+		"name": "customer1",
+		"a":    "c",
+	}
+
+	t2 := map[string]interface{}{
+		"customer1": "1",
+		"c":         "2",
+	}
+
+	var dto fetch.DtoOutput = &fetch.DtoAdapter{
+		Dto: fetch.Dict{DtoA: t1, DtoB: t2},
+	}
+	dtoData, _ := dto.DtoTransform()
+
 	output.Success(gin.H{
-		"name":   "customer",
-		"list":   imgList,
-		"m":      m,
-		"header": ctx.Request.Header,
-		"s":      s,
+		"name": "customer",
+		"list": imgList,
+		"m":    m,
+		// "header":  ctx.Request.Header,
+		"s":       s,
+		"dtoData": dtoData,
 	})
 }
