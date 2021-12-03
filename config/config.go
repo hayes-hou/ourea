@@ -15,8 +15,9 @@ type App struct {
 }
 
 type MySQLConf struct {
-	Driver string
-	Dsn    string
+	Driver    string
+	MasterDsn string
+	SlaveDsn  string
 }
 
 type MongoConf struct {
@@ -74,8 +75,9 @@ var Module = fx.Provide(func() *Config {
 			Stat:       GetKeyByConf("app.stat", "bool").(bool),
 		},
 		MySQLConf{
-			Driver: GetKeyByConf("mysql.driver", "str").(string),
-			Dsn:    GetKeyByConf("mysql.dsn", "str").(string),
+			Driver:    GetKeyByConf("mysql.driver", "str").(string),
+			MasterDsn: GetKeyByConf("mysql.master.dsn", "str").(string),
+			SlaveDsn:  GetKeyByConf("mysql.slave.dsn", "str").(string),
 		},
 		MongoConf{
 			Addr:          GetKeyByConf("mongo.addr", "str").(string),
