@@ -7,7 +7,6 @@ import (
 	"ourea/infrastructure/mongo"
 	"ourea/internal/domain/entity"
 	"ourea/internal/domain/repository"
-	"ourea/pkg/header"
 
 	"github.com/gin-gonic/gin"
 
@@ -43,11 +42,6 @@ var RegCustomerService = fx.Provide(func(logger *logrus.Logger, mongo *mongo.Mon
 func (c CustomerService) Get(ctx *gin.Context) ([]entity.UploadImg, []bson.M, string) {
 	// MySQL
 	var imgList []entity.UploadImg
-	c.db.Master.SetLogger(c.logger.WithFields(logrus.Fields{
-		"requestId": ctx.Request.Header.Get(header.RequestId),
-		"spanId":    ctx.Request.Header.Get(header.SpanId),
-	}))
-
 	c.db.Master.Find(&imgList)
 
 	// Mongodb
