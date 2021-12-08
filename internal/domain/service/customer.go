@@ -47,6 +47,7 @@ func (c CustomerService) Get(ctx *gin.Context) ([]entity.UploadImg, []bson.M, st
 		"requestId": ctx.Request.Header.Get(header.RequestId),
 		"spanId":    ctx.Request.Header.Get(header.SpanId),
 	}))
+
 	c.db.Master.Find(&imgList)
 
 	// Mongodb
